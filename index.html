@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CakeCo - Handcrafted Cakes for Every Celebration</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#f1668b", "background-light": "#f8f6f6", "background-dark": "#211115", "text-light": "#1b0d11", "text-dark": "#f8f6f6", "subtext-light": "#9a4c5f", "subtext-dark": "#d3a7b6", "surface-light": "#fcf8f9", "surface-dark": "#301f25", "border-light": "#f3e7ea", "border-dark": "#4a2f38"}, fontFamily: {display: "Work Sans"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<main class="flex flex-1 justify-center">
+<div class="flex w-full max-w-6xl flex-col">
+<section class="p-4 @container">
+<div class="flex min-h-[500px] flex-col items-center justify-center gap-6 rounded-xl bg-cover bg-center bg-no-repeat p-8 text-center @[480px]:gap-8" data-alt="A beautiful, multi-layered celebration cake with white frosting and fresh berries on top, set against a soft, blurred background." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuALqhuzyFjOE_N1fOUmyFgbC__WmJAwrfYpCcirDcJUAGDTTBciP4dFez7Mcyg0qknKWyAYh8y-Y-jTTnjPmrzfwLYiTLXkxR01zpEsdI2P0LmTBfyL1Da3jNkDJoy8X2oB0eUfVEZZihzoDF89ll20prfv4tNcTSQzfnPM6CKgtWTeK_IdM3CpUCcW21K29P4YPSCJ4fHZUM7rXwL8ljFd6zv3oDrlEI1HabFpdC3jLY1HmOruIjWarcU3I63aNnf5zK0UJpp7Zpc");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl font-black leading-tight tracking-tight text-white @[480px]:text-5xl">Handcrafted Cakes for Every Celebration</h1>
+<h2 class="text-base font-normal leading-normal text-white @[480px]:text-lg">Freshly baked and delivered across Canada.</h2>
+</div>
+<button class="flex h-12 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary px-6 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">
+<span class="truncate">Explore Our Collection</span>
+</button>
+</div>
+</section>
+<section class="py-10">
+<h2 class="px-4 pb-4 text-2xl font-bold leading-tight tracking-tight">Our Bestsellers</h2>
+<div class="flex overflow-x-auto p-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch gap-4">
+<div class="flex h-full w-64 flex-shrink-0 flex-col gap-4 rounded-xl bg-surface-light dark:bg-surface-dark shadow-md transition-shadow hover:shadow-lg">
+<div class="aspect-square w-full rounded-t-xl bg-cover bg-center bg-no-repeat" data-alt="A slice of rich chocolate fudge cake with glossy ganache." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBA0UO3nqrRaBLGchOpDO-66Z5BbZJDAu3FZqkMMy4BCGRyhURn1yUWoIooygbwMqbysc6Y7knUqLRhKZFrcIOU3moUkLslAwn0JFqRgzLn_zI14SdD_209lbgO6awkjhVU1n6tNShS8CMLJGrSVpDkrrXPKV3Pt2gTgVvW_rrtvOdr2oxTh28yQ1kfFDRdXVmE4Thy7kg3WKeB20sPDmC3zLYVRTrxV-jD8yeCliFdHbWCDCfKdPOdDz7b4jR4AsCZFPHgycs12pY");'></div>
+<div class="flex flex-1 flex-col justify-between p-4 pt-0">
+<div>
+<p class="font-bold">Chocolate Fudge Cake</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">$45.00</p>
+</div>
+<button class="mt-4 flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/20 text-sm font-bold hover:bg-primary/30">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full w-64 flex-shrink-0 flex-col gap-4 rounded-xl bg-surface-light dark:bg-surface-dark shadow-md transition-shadow hover:shadow-lg">
+<div class="aspect-square w-full rounded-t-xl bg-cover bg-center bg-no-repeat" data-alt="A light and airy strawberry shortcake with layers of cream and fresh strawberries." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCP7N5OEr_4QebYRrEH9BYnNSP4W8EuETsUvB_SaABYoBlX6V5P0NrSg5mnb5_PFJe9DO3KF3d2yDyyQEaJqn2sQ1O975QTVLKx64c_buEoqeqGM_lvkF2QI6_bY9WDVZHtVC6_DxxRVha-YapbaUIAf0YqGaAv35aRQI6PA0GEhVjl9UkdNT_xx9taGWRomMd-8A-UFml0dJ_LieQg2DcibTfbovUEh1Xb2NclUr70ZVStFAFz0_FwFTxbWmX3ycsAFEPeNxdrAnA");'></div>
+<div class="flex flex-1 flex-col justify-between p-4 pt-0">
+<div>
+<p class="font-bold">Strawberry Shortcake</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">$42.00</p>
+</div>
+<button class="mt-4 flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/20 text-sm font-bold hover:bg-primary/30">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full w-64 flex-shrink-0 flex-col gap-4 rounded-xl bg-surface-light dark:bg-surface-dark shadow-md transition-shadow hover:shadow-lg">
+<div class="aspect-square w-full rounded-t-xl bg-cover bg-center bg-no-repeat" data-alt="A classic red velvet cake with cream cheese frosting and red crumbs." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxh5m25FtKDTUmy0F6M9NGq31yYmULOhBuFHeqXGHcwtMAzT1AhvzAqhQQ8p7E4N52bMz70iR73mkcOL78ZmFjhavFJA8FTeuKzSAfGe6wP9Vc43iF2z7qRrj6XY5pvBcKRNbn3lQ3Wxv6xh83BJ-TmB6wD92-1-YfIY6OlBqFiKoNA_h2AFSW0_QY_H6PHivWJSuRblW3ihg7EAG-vBcrNNP7qWcUCmwpbu7dmrtefXauNgMgYQloKCzqeL5NDNgXzjYfW3hZUAs");'></div>
+<div class="flex flex-1 flex-col justify-between p-4 pt-0">
+<div>
+<p class="font-bold">Red Velvet Delight</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">$48.00</p>
+</div>
+<button class="mt-4 flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/20 text-sm font-bold hover:bg-primary/30">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+<div class="flex h-full w-64 flex-shrink-0 flex-col gap-4 rounded-xl bg-surface-light dark:bg-surface-dark shadow-md transition-shadow hover:shadow-lg">
+<div class="aspect-square w-full rounded-t-xl bg-cover bg-center bg-no-repeat" data-alt="A lemon drizzle loaf cake with white icing dripping down the sides." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1QzI2o5iMikHRo8UTxyYHfbrjchNSWYdsSuGSiXyVNQwC44lyzai5PpdKoMa-HBwCJHSA6jkaW0ytg2WmyIveDMOLYwinnpbZmp7H-FlZkHKaRGoKvd983JshfTRIQ6Gz2Ghpmz-xfpvzQVPPioXhOyKc5cMF9LLNv8ZpyTZ_8mkxj381z3YHot3s1RaqK8iutfPsnLVoBjACLAQsuwrcug0jkcFM_Tw3w9iKvc9EJ12S0iMd-opoFlDKYIFcK9cP3n8NkAjXGlc");'></div>
+<div class="flex flex-1 flex-col justify-between p-4 pt-0">
+<div>
+<p class="font-bold">Zesty Lemon Drizzle</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">$40.00</p>
+</div>
+<button class="mt-4 flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary/20 text-sm font-bold hover:bg-primary/30">
+<span class="truncate">Add to Cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="p-4">
+<div class="flex flex-col-reverse items-center gap-8 rounded-xl bg-surface-light dark:bg-surface-dark p-8 md:flex-row">
+<div class="flex flex-1 flex-col gap-4 text-center md:text-left">
+<h3 class="text-xl font-bold leading-tight">Fall Favourites Are Here!</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Discover our new collection of seasonal cakes, crafted with the warm spices and rich flavours of autumn.</p>
+<button class="mt-2 flex h-10 min-w-[84px] max-w-xs cursor-pointer items-center justify-center self-center overflow-hidden rounded-full bg-primary/20 px-5 text-sm font-bold hover:bg-primary/30 md:self-start">
+<span class="truncate">Shop Seasonal Specials</span>
+</button>
+</div>
+<div class="aspect-video w-full flex-1 rounded-lg bg-cover bg-center bg-no-repeat" data-alt="A pumpkin spice cake decorated with cinnamon sticks and autumn leaves." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSbThIpAgCNcD993CcxqgkhAo_hLbmYYWyGtarEFK0wBdG9yQk7d-cL0GHKKFUKVK6qYQJazbamp3JeUPukOVnEBAIhWYsnBJkFDAZWx_5peEWreinpPmx269UUmwn6AstPLNex5Yqbrw1Gf5BDhfiCnZxp6Ht9QLZhqXrOrum9I4FlgZCcROE4gTjxyEQJj-h0DG_m3hzzkYogsU-gFxHEsYrOqynmVNdd4yqPr0gLOek6vWEKGxeq-Zni4f00ZVz02lkdJtWleY");'></div>
+</div>
+</section>
+<section class="py-10">
+<h2 class="px-4 pb-4 text-2xl font-bold leading-tight tracking-tight">Find Your Perfect Cake</h2>
+<div class="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4">
+<div class="group relative flex h-64 cursor-pointer items-center justify-center overflow-hidden rounded-xl">
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="Colorful birthday cake with lit candles." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFgasuyw1kxbjFmLiFiN7p8xSkdOXMe30-D8FsqQoon1IW3xDsCElCaDR4iIuCj4rmkgGTOAf6oGYzcIx1EX3EPimL4vbpF65-9e6nW2u_-NxempEbyEE2KJMD0-6KKzuY8EOV1AlfIK2k0fMw3mnroLjCNSRKlKoUcShJp3XVAzuf3Z6kkjdQOHjLnYvBXN48JaRV5fU56HzAwflLQUHa20WHM5ug88nseWbia9Fzohikgr2I5-bOGE4CJ6wxqqGhv7-mp237cHg");'></div>
+<div class="absolute inset-0 bg-black/40"></div>
+<h3 class="relative z-10 text-xl font-bold text-white">Birthday Cakes</h3>
+</div>
+<div class="group relative flex h-64 cursor-pointer items-center justify-center overflow-hidden rounded-xl">
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="Elegant multi-tiered wedding cake with white flowers." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCr0LZzz-cUdXvshjK1xEJ173cLBJf0F2P33oiE7_oBJHkij2RxcftYm4_PvJbPtxPClCaWfsr5xlrHNv53zUlIjhhFGU1i7FpK82I9b3LUlhqVm7EPISrvyBHXEz2tAkl3rut9f4uRlAIWkN8ePpk1RpA5dQ__n6j7Z8R1LKI0zDLXSznC0N8QEkfO3a4fYyNpRtvjT5uB6_x_j7PUxJ9FdNAa00O0U7sQ2eqrUnOb3rjWf-5UckV_3NHsDhRjAOfPf3UqqZ9Z7kU");'></div>
+<div class="absolute inset-0 bg-black/40"></div>
+<h3 class="relative z-10 text-xl font-bold text-white">Wedding Cakes</h3>
+</div>
+<div class="group relative flex h-64 cursor-pointer items-center justify-center overflow-hidden rounded-xl">
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="An assortment of cupcakes with different frostings." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_1HkrCSTEB-X-ltQfdIZgkJZGNV7T9ab_i82wqiOxLrgc6N2X1nOKl2BKKK8KLpdZFrXslYDaJ5EqtApfB6GddoGqv9j8NLOY3NND37WFjNC4mHR2iGdkbtj_l9BeImT07QeYW77e0ojEnMyZXwGdD6XFzEvRFobXuE-aPtLekoitDUZIzEEAtq_jdWPiYBKZE8Gx7rnn_rWocCuUyoGPikdbIsdfgtx_jW2GYyusGnt-eCb36YkAEu6i4kOVpxUQCoqrdHHTznQ");'></div>
+<div class="absolute inset-0 bg-black/40"></div>
+<h3 class="relative z-10 text-xl font-bold text-white">Cupcakes</h3>
+</div>
+<div class="group relative flex h-64 cursor-pointer items-center justify-center overflow-hidden rounded-xl">
+<div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110" data-alt="A gluten-free chocolate avocado cake slice." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBeXnMb9UcpZ1Fgi9MppoFw5bz8fyM4NCUPILOD7Ow0goGQkvfIylmc4FpLFCARzTF80N5FOcYuv4w00ns5rxi2Ls1QjGL1qPpEr-6a-ufb9u75Xi6woNrFKZ5HzpJVRVBCmSooRzQMSV6T9H-JxFp3MjZxHHGLLkJkdjjnrXAlBboYW0R3dUkaayaS1fkKGjIgAdeXXYmdAx9UaQ3R-2ooVd_8J9b-GLPwi0twF7cCuBtV568GvZfArBWFvGcdBWfbzasWfM0dJQQ");'></div>
+<div class="absolute inset-0 bg-black/40"></div>
+<h3 class="relative z-10 text-xl font-bold text-white">Vegan &amp; Gluten-Free</h3>
+</div>
+</div>
+</section>
+<section class="py-10 px-4">
+<div class="flex flex-col items-center justify-center rounded-xl bg-primary/10 dark:bg-primary/20 p-8 text-center">
+<span class="material-symbols-outlined text-4xl text-primary">favorite</span>
+<h3 class="mt-2 text-2xl font-bold">Baked with Love in Canada</h3>
+<p class="mt-2 max-w-2xl text-subtext-light dark:text-subtext-dark">At CakeCo, we believe every celebration deserves a special cake. That's why we use only the finest, locally-sourced ingredients to handcraft delicious memories, baked fresh right here in Canada and delivered to your door.</p>
+</div>
+</section>
+</div>
+</main>
+<footer class="flex justify-center border-t border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark">
+<div class="w-full max-w-6xl p-8">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+<div>
+<h4 class="font-bold">CakeCo</h4>
+<p class="mt-2 text-sm text-subtext-light dark:text-subtext-dark">Handcrafted cakes for every celebration.</p>
+</div>
+<div>
+<h4 class="font-bold">Shop</h4>
+<nav class="mt-2 flex flex-col gap-1 text-sm">
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">All Cakes</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">Bestsellers</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">Seasonal</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">Custom Orders</a>
+</nav>
+</div>
+<div>
+<h4 class="font-bold">Information</h4>
+<nav class="mt-2 flex flex-col gap-1 text-sm">
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">About Us</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">Contact</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">FAQs</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary" href="#">Shipping Policy</a>
+</nav>
+</div>
+<div>
+<h4 class="font-bold">Stay in Touch</h4>
+<p class="mt-2 text-sm text-subtext-light dark:text-subtext-dark">Sign up for special offers and new arrivals.</p>
+<form class="mt-4 flex items-center">
+<input class="h-10 w-full rounded-l-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark text-sm placeholder-subtext-light dark:placeholder-subtext-dark focus:border-primary focus:ring-primary" placeholder="Your email" type="email"/>
+<button class="h-10 shrink-0 rounded-r-lg bg-primary px-4 font-bold text-white" type="submit">Sign Up</button>
+</form>
+</div>
+</div>
+<div class="mt-8 border-t border-border-light dark:border-border-dark pt-6 text-center text-sm text-subtext-light dark:text-subtext-dark">
+<p>© 2024 CakeCo. All rights reserved. Made with ❤️ in Canada.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

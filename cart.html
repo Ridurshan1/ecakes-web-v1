@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Delectable Cakes - Secure Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b5b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221015",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Main Content -->
+<main class="layout-container flex h-full grow flex-col">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<div class="layout-content-container flex flex-col flex-1">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 mb-4">
+<a class="text-primary/80 dark:text-primary/90 hover:text-primary text-sm font-medium leading-normal" href="#">Cart</a>
+<span class="text-gray-400 dark:text-gray-600 text-sm font-medium leading-normal">/</span>
+<span class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal">Checkout</span>
+<span class="text-gray-400 dark:text-gray-600 text-sm font-medium leading-normal">/</span>
+<span class="text-gray-400 dark:text-gray-600 text-sm font-medium leading-normal">Confirmation</span>
+</div>
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-3 mb-8">
+<p class="text-[#1b0d11] dark:text-gray-100 text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Secure Checkout</p>
+</div>
+<!-- Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-12">
+<!-- Left Column: Checkout Flow -->
+<div class="lg:col-span-2 space-y-8">
+<!-- Order Review Section -->
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-sm">
+<h2 class="text-[#1b0d11] dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 border-b border-gray-200 dark:border-gray-700">Review Your Order</h2>
+<div class="divide-y divide-gray-200 dark:divide-gray-700">
+<!-- List Item 1 -->
+<div class="flex gap-4 py-4 justify-between items-center">
+<div class="flex items-start gap-4 flex-grow">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg h-[80px] w-[80px] shrink-0" data-alt="A slice of Velvet Raspberry Dream Cake on a plate" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVqEyETlEQ0qt506kMNQYMvTDxpJUCABKUIoG8GxB3HXNSfOn8NmTDDpev-kGZHiNyYXWPjEGrUnveAg7mLdhxuD7YNqURduoP9f9vq3AD0jjKVZ2ianfvS_rFxbVOnQmnhbL8jmrBZN-eSfKnNvbASXiI8W_kK67gAcD4y5DC622PUw-qnlBr11Vc57vC5_ti-BfSc8D55Xm054D4yI_fx102Z07Rf7lQAR0QP3yi5NqF3dfigBfGqtm61p173RBWF7WDbgj6Juo");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#1b0d11] dark:text-gray-100 text-base font-medium leading-normal">Velvet Raspberry Dream Cake</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$55.00</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Size: 8-inch, Flavour: Raspberry Cream</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-[#1b0d11] dark:text-gray-100">
+<button class="text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">-</button>
+<input class="text-base font-medium leading-normal w-6 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 focus:border-none border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="1"/>
+<button class="text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">+</button>
+</div>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="flex gap-4 py-4 justify-between items-center">
+<div class="flex items-start gap-4 flex-grow">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg h-[80px] w-[80px] shrink-0" data-alt="A close-up of a Decadent Chocolate Fudge Cake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBi4B9SlRNl3ZceDNpmJzjo5LR2t35lROJihtPVAkGC5B1FBgyUsVt0y8hXsrAhW9FGl3e_C0qnVDGw65R9gkxVob25WwTIp4ZRZkUE41cyHphhu8GcBRVj1kpFDfELzNkrK_9ciSr0Afv3qSIm8kc6wIxUTbf9mZ8w80FfgKsqVa-_ArE3SnQbDjoFcFdSa-LFP2oTdT9v52Mdgt2N3_eag3aTEmlZ8Ql11PSNJEbz6q0xaUiVuy3BZI1_d1L_e77HQyUHeQ6ol88");'></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-[#1b0d11] dark:text-gray-100 text-base font-medium leading-normal">Decadent Chocolate Fudge Cake</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">$62.00</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">Size: 10-inch, Extra Fudge</p>
+</div>
+</div>
+<div class="shrink-0">
+<div class="flex items-center gap-2 text-[#1b0d11] dark:text-gray-100">
+<button class="text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">-</button>
+<input class="text-base font-medium leading-normal w-6 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 focus:border-none border-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none" type="number" value="1"/>
+<button class="text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Delivery Information Section -->
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-sm">
+<h2 class="text-[#1b0d11] dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">1. Delivery Information</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="fullName">Full Name</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="fullName" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email Address</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="email" placeholder="you@example.com" type="email"/>
+</div>
+<div class="md:col-span-2">
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="address">Street Address</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="address" placeholder="123 Cake Lane" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="city">City</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="city" placeholder="Toronto" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="province">Province</label>
+<select class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="province">
+<option>ON</option>
+<option>QC</option>
+<option>BC</option>
+<option>AB</option>
+</select>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="postalCode">Postal Code</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="postalCode" placeholder="M5V 2T6" type="text"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Method Section -->
+<div class="bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-sm">
+<h2 class="text-[#1b0d11] dark:text-gray-100 text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">2. Payment Method</h2>
+<div class="grid grid-cols-1 gap-4">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="card-number">Card Number</label>
+<div class="relative mt-1">
+<input class="block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm pr-10" id="card-number" placeholder="•••• •••• •••• ••••" type="text"/>
+<span class="material-symbols-outlined absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="expiry-date">Expiry Date</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" id="expiry-date" placeholder="MM / YY" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="cvc">CVC</label>
+<div class="relative mt-1">
+<input class="block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm pr-10" id="cvc" placeholder="•••" type="text"/>
+<span class="material-symbols-outlined absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">lock</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-base">verified_user</span>
+<span>Your payment information is secure.</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-1">
+<div class="sticky top-28 bg-white dark:bg-background-dark/50 p-6 rounded-xl shadow-sm space-y-4">
+<h3 class="text-[#1b0d11] dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] border-b border-gray-200 dark:border-gray-700 pb-3">Order Summary</h3>
+<div class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+<div class="flex justify-between">
+<span>Subtotal</span>
+<span>$117.00</span>
+</div>
+<div class="flex justify-between">
+<span>Delivery Fee</span>
+<span>$10.00</span>
+</div>
+<div class="flex justify-between">
+<span>Taxes (HST 13%)</span>
+<span>$16.51</span>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-700 pt-4">
+<div class="flex justify-between font-bold text-lg text-[#1b0d11] dark:text-gray-100">
+<span>Total</span>
+<span>$143.51 CAD</span>
+</div>
+</div>
+<div class="pt-2">
+<div class="flex gap-2">
+<input class="flex-grow block w-full rounded-lg border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-primary focus:ring-primary dark:text-gray-200 shadow-sm text-sm" placeholder="Promo Code" type="text"/>
+<button class="flex items-center justify-center rounded-lg px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-sm font-bold hover:bg-gray-300 dark:hover:bg-gray-600">Apply</button>
+</div>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark transition-colors">
+                                    Place Order
+                                </button>
+<div class="flex items-center justify-center gap-4 pt-2">
+<img class="h-4" data-alt="Visa logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCky-vsMFdMk9A6Zz966gth3WDQr7a9Dt-Q0gy094YC_Iy8EMA8FuupuTl_7UZ-I5Nn93vJSOqhS7Wle2E4X869lXJla7VzhPsEYaNy3Vk6Ff7rTetBCudcH6mn2HbNn36PTq_s54e_hi977KI86qO1GSOSNmiI2b9YQd8vyLQP_HU4kzd6lY-TxVhYKx9d-xR6uTCn8mgeKnDHN1wNtxOI0-6c0-UW5KL6NE2xRAQdsc2zIQxI9BkKUvNaBpdSOOzWMMrEG1NjWLg"/>
+<img class="h-4" data-alt="Mastercard logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKEVFW3lbeC1oVN7AJZjnJbiK_nFCT0qcX_zuaaBw2gtWE2-hi5uB4CX6BnTP-RBoYt1N3eV9A1ulsi1sCl9ruxcX453ThFoNo76O_NQN-YyN0NRTCKvGwaON-9oIbj999RBZMFpEx45gBoPl5nkD4z6DQZuJv7WZ6dLcOYPpE6Kvoi2MPyGntVmisUPZ_cxNooogXh80yGENRcnRZ9yGgL-PdEcDxZ9UOmQNr8We5Zosn8eJ5fLOyV6Z6pzZr3QqYbKuPDlIEI2A"/>
+<img class="h-4" data-alt="American Express logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4IS_iyuRJKG7-lAzqxaneYXSCMQJdo1mp4qUBptExK3YvOqRMtUJ1qZOUCcLhUG_5SPyeBRc6BUofHCvMTAf1i5waQb4tPuw_wcCyArynt5KUBFacYgCUYqIFWpWANnzJOX2BmVhdMAthJIqNbB-hyxmzW9B2BdFQdKnLngShN46Z26OYRp5AzOsCULfzNLtU6FbzAnAeFIJbD_KvKFb0dcTXSjk3IYPDnUqbGJZJDi1EqeOBFNVGJR1hnp5A2nd9wk3pH6vaM2c"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

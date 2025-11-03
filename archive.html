@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cake Catalog - CakeHeaven</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#ee2b5b", "background-light": "#f8f6f6", "background-dark": "#221015", "text-light": "#1b0d11", "text-dark": "#f8f6f6", "subtle-light": "#f3e7ea", "subtle-dark": "#3a2a2f", "subtle-text-light": "#9a4c5f", "subtle-text-dark": "#b49ca5", "border-light": "#e7cfd5", "border-dark": "#4a3a3f"}, fontFamily: {display: "Work Sans"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}}}};</script>
+<style>
+    body {
+        font-family: 'Work Sans', sans-serif;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Main Content -->
+<main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<p class="text-text-light dark:text-text-dark text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Explore Our Handcrafted Cakes</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 mt-4">
+<!-- Sidebar -->
+<aside class="w-full lg:w-64 xl:w-72 flex-shrink-0">
+<div class="sticky top-24 p-4 rounded-xl bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Categories</h3>
+<div class="flex gap-2 p-1 flex-wrap">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-primary/20 pl-4 pr-4">
+<p class="text-primary text-sm font-medium leading-normal">Wedding</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-subtle-light dark:bg-subtle-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Birthday</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-subtle-light dark:bg-subtle-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Chocolate</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-subtle-light dark:bg-subtle-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Fruit</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-subtle-light dark:bg-subtle-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Vegan</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-subtle-light dark:bg-subtle-dark pl-4 pr-4">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Custom</p>
+</div>
+</div>
+<!-- Accordions -->
+<div class="flex flex-col mt-4">
+<details class="flex flex-col border-t border-border-light dark:border-border-dark py-2 group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Dietary Options</p>
+<span class="material-symbols-outlined text-text-light dark:text-text-dark transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="space-y-2 pb-2 pl-2">
+<label class="flex items-center gap-2 text-subtle-text-light dark:text-subtle-text-dark text-sm"><input class="form-checkbox rounded-sm border-border-light dark:border-border-dark bg-subtle-light dark:bg-subtle-dark text-primary focus:ring-primary/50" type="checkbox"/>Gluten-Free</label>
+<label class="flex items-center gap-2 text-subtle-text-light dark:text-subtle-text-dark text-sm"><input class="form-checkbox rounded-sm border-border-light dark:border-border-dark bg-subtle-light dark:bg-subtle-dark text-primary focus:ring-primary/50" type="checkbox"/>Nut-Free</label>
+<label class="flex items-center gap-2 text-subtle-text-light dark:text-subtle-text-dark text-sm"><input class="form-checkbox rounded-sm border-border-light dark:border-border-dark bg-subtle-light dark:bg-subtle-dark text-primary focus:ring-primary/50" type="checkbox"/>Dairy-Free</label>
+</div>
+</details>
+<details class="flex flex-col border-t border-border-light dark:border-border-dark py-2 group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Flavors</p>
+<span class="material-symbols-outlined text-text-light dark:text-text-dark transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="space-y-2 pb-2 pl-2">
+<label class="flex items-center gap-2 text-subtle-text-light dark:text-subtle-text-dark text-sm"><input class="form-checkbox rounded-sm border-border-light dark:border-border-dark bg-subtle-light dark:bg-subtle-dark text-primary focus:ring-primary/50" type="checkbox"/>Chocolate</label>
+<label class="flex items-center gap-2 text-subtle-text-light dark:text-subtle-text-dark text-sm"><input class="form-checkbox rounded-sm border-border-light dark:border-border-dark bg-subtle-light dark:bg-subtle-dark text-primary focus:ring-primary/50" type="checkbox"/>Vanilla</label>
+<label class="flex items-center gap-2 text-subtle-text-light dark:text-subtle-text-dark text-sm"><input class="form-checkbox rounded-sm border-border-light dark:border-border-dark bg-subtle-light dark:bg-subtle-dark text-primary focus:ring-primary/50" type="checkbox"/>Red Velvet</label>
+</div>
+</details>
+</div>
+<button class="mt-6 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+              Apply Filters
+            </button>
+</div>
+</aside>
+<!-- Cake Grid -->
+<div class="flex-1">
+<div class="flex justify-between items-center mb-4">
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Showing 1-9 of 27 results</p>
+<div class="relative">
+<select class="form-select appearance-none block w-full pl-3 pr-10 py-2 text-sm border-border-light dark:border-border-dark rounded-lg bg-subtle-light dark:bg-subtle-dark text-text-light dark:text-text-dark focus:outline-none focus:ring-primary/50 focus:border-primary/50">
+<option>Sort by Most Popular</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-subtle-text-light dark:text-subtle-text-dark">
+<span class="material-symbols-outlined" style="font-size: 20px;">keyboard_arrow_down</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Cake Card -->
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark pb-4 group">
+<div class="overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover transition-transform duration-300 group-hover:scale-105" data-alt="A rich chocolate drip cake decorated with chocolate frosting and various chocolates." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApXR280vvIMF5DnAcOEaD-Fd1PtLpvi_cPaE3kTqqFA7upRaJoZPfXvCBg3viGwXoMlkiZLxv6yHUkmYpIvjcLynEZBMatQ9BVCoT68MKstvL848a_wVj3A4r5N9XvBwRdxaScrBCbHAxl5ijTYOvQzWXPslwezxzBbg9giUHIB05rjVaAQ6pE54qQvCjEdNrnf__kKieo3jFHP3GM9F-xMK4z6i6HB0vH3-7IAuHO3otaXZheiqRQJWBlXHtON02HpAnUQNruy5U");'></div>
+</div>
+<div class="flex flex-col px-4 gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Death by Chocolate</h3>
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Decadent &amp; Rich</p>
+<p class="text-base font-semibold text-text-light dark:text-text-dark">From $55.00 CAD</p>
+</div>
+<div class="px-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary/20 text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">View Cake</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark pb-4 group">
+<div class="overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover transition-transform duration-300 group-hover:scale-105" data-alt="A colorful birthday cake with M&amp;Ms spilling from a fondant bag on top." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXVc1cFWQCG6yc2tZCb5EMfdZz4DiA5tF4rthPy1pgSHwwS7uVo1GUmCKIMyNEDk8yd9pBLDJAzqZ0pZtOzAxJnXUI-U1I6OR727FAXAoFZSeBuwl47HJbCff_sk-k5y5fG5P54I09UJ9PVTe0PP67ogUKJCJw1FLd4iNGpLpxtloJUwK_hj5iwaLBdqkC_rPgsjO_YJIj5H98XuyI9Lwz7tmu1oklFhxqnva7YmmcDJDCOB5vJfh7Lga0egjUG1XiN5gbVFZFvnA");'></div>
+</div>
+<div class="flex flex-col px-4 gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Birthday Surprise</h3>
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Fun &amp; Colorful</p>
+<p class="text-base font-semibold text-text-light dark:text-text-dark">From $60.00 CAD</p>
+</div>
+<div class="px-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary/20 text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">View Cake</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark pb-4 group">
+<div class="overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover transition-transform duration-300 group-hover:scale-105" data-alt="A beautiful white wedding cake decorated with fresh roses and greenery." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhAy0-o8Tla_ziflLR5v7mRwPYDs6FxywCM-VPyGhQIyX9yo1veDmcoMubldjUjKkeQ-3xLKXdimzHAFZ1VbjTK073Bn0gCFIF96lKD9EzMOgpNeF8uMVrusrGSuMCRbcDNkN1iDu-dFoAk9To7tpE118rCwCyergCoGVbSxiDqNFX5Lw_ykHsqQJL6eAK3H5hLwjzkGPjo4raexjUgyqS2Hhsj_J2bjlGWDcHsqzQOXmLLJIOPi6YkqE8UTd0Wruj2z0-_qC1brY");'></div>
+</div>
+<div class="flex flex-col px-4 gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Classic Wedding Cake</h3>
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Elegant &amp; Timeless</p>
+<p class="text-base font-semibold text-text-light dark:text-text-dark">From $150.00 CAD</p>
+</div>
+<div class="px-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">Customize</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark pb-4 group">
+<div class="overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover transition-transform duration-300 group-hover:scale-105" data-alt="A slice of red velvet cake on a plate, showing its vibrant red interior." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTMRKQH6k8TH56aQUI7YQZogKoqJQ98f2iYQWigm55mqeLpbhDv4YWqIcmWjs6vBqY7ujezRomtS8anDz55v1jEXL4QrcHDse_A6i-M86vYcowzE8BjkIKulflrc2pkHnw1dTvxC-vNliVQJi8cL-duR_AlqD2thk4wtwrWHVn0Sy7HOoP9bSd7f_FZmNI9IqDcLfebE2Ro2TT_EosQY-E8UamgLGv-Os53oeFOleMEBL04NXwtEjDIgk1heCedVq1Gm1WG0JA7Cw");'></div>
+</div>
+<div class="flex flex-col px-4 gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Red Velvet Dream</h3>
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Cream Cheese Frosting</p>
+<p class="text-base font-semibold text-text-light dark:text-text-dark">From $50.00 CAD</p>
+</div>
+<div class="px-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary/20 text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">View Cake</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark pb-4 group">
+<div class="overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover transition-transform duration-300 group-hover:scale-105" data-alt="A naked cake adorned with fresh berries and figs." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuvyrNUXd0H8ida854BJVbWVmT2PZjmld86HrvOJSCIZrO1sReaJzKpDyRJrcHUT5qP6rudh38RIBZixmwTz3x8SxLBJUUWSJWQuXwIHa9tfXXWEyr0xsOlQzlNw8MQBiuOz8-lEohSp0hG7sEvpS8OqC8z7KFaADnU7xGszWK-i_eTeMbEViIL7R59PSb1xaqGjRmmqApHPnk7cL8V41xKFH24rfW6PbiIBi_0K0Yr7uz855W-NrK-NLqz345MSNWJHyksR9scr8");'></div>
+</div>
+<div class="flex flex-col px-4 gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Summer Berry Cake</h3>
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Light &amp; Fruity</p>
+<p class="text-base font-semibold text-text-light dark:text-text-dark">From $65.00 CAD</p>
+</div>
+<div class="px-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary/20 text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">View Cake</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden bg-background-light dark:bg-subtle-dark/40 border border-border-light dark:border-border-dark pb-4 group">
+<div class="overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover transition-transform duration-300 group-hover:scale-105" data-alt="A vegan chocolate avocado cake topped with fresh raspberries." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpEgaEH683YuvBFaEqI2tliZ4WgB5zayDwNNs95s4u3tUx6CejgP8xg0tqazbNbb8-4iA-LX5-DBsvP_Hznau3Lkq_-Y932y4XtHdicfq5Z0g1fQ5L-78Y20lo2DXazXvueJtFLbGaNh2aq_lX5qKfMA7UvLefCvJO2G-dnQSoEOJLZQ_zDQ69iSu4qZcXnwXH6UBsw2uIQCcj2ZkOjBZPv0qglqFQqUT-yPxo9iQXWhHt-jDv2a3KC818uWkwT5pLXjZIz9OUZXs");'></div>
+</div>
+<div class="flex flex-col px-4 gap-2">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Vegan Chocolate Avocado</h3>
+<p class="text-sm text-subtle-text-light dark:text-subtle-text-dark">Rich &amp; Dairy-Free</p>
+<p class="text-base font-semibold text-text-light dark:text-text-dark">From $70.00 CAD</p>
+</div>
+<div class="px-4">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-primary/20 text-primary gap-2 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">View Cake</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center mt-12">
+<nav class="flex items-center gap-2">
+<button class="flex items-center justify-center h-10 w-10 rounded-lg text-subtle-text-light dark:text-subtle-text-dark">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-primary text-white font-bold text-sm">1</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-subtle-light dark:bg-subtle-dark text-text-light dark:text-text-dark font-medium text-sm">2</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg bg-subtle-light dark:bg-subtle-dark text-text-light dark:text-text-dark font-medium text-sm">3</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-lg text-subtle-text-light dark:text-subtle-text-dark">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-subtle-light dark:bg-subtle-dark/40 mt-16 border-t border-border-light dark:border-border-dark">
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-sm font-bold text-text-light dark:text-text-dark tracking-wider uppercase">Shop</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">All Cakes</a></li>
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">Wedding Cakes</a></li>
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">Custom Orders</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold text-text-light dark:text-text-dark tracking-wider uppercase">About</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">Our Story</a></li>
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">FAQ</a></li>
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold text-text-light dark:text-text-dark tracking-wider uppercase">Legal</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">Privacy Policy</a></li>
+<li><a class="text-sm text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="flex flex-col">
+<h3 class="text-sm font-bold text-text-light dark:text-text-dark tracking-wider uppercase">Follow Us</h3>
+<div class="flex mt-4 space-x-4">
+<a class="text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">
+<!-- Placeholder for Social Icon -->
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-subtle-text-light dark:text-subtle-text-dark hover:text-primary" href="#">
+<!-- Placeholder for Social Icon -->
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-border-light dark:border-border-dark pt-8">
+<p class="text-base text-subtle-text-light dark:text-subtle-text-dark text-center">© 2024 CakeHeaven, Inc. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
