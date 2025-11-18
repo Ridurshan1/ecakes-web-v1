@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Cake Creations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#eb2d60",
+            "background-light": "#f8f6f6",
+            "background-dark": "#211115",
+            "surface-light": "#fcf8f9",
+            "surface-dark": "#2a161a",
+            "text-light-primary": "#1b0e11",
+            "text-dark-primary": "#fcf8f9",
+            "text-light-secondary": "#994d61",
+            "text-dark-secondary": "#d3b6bf",
+            "border-light": "#f3e7ea",
+            "border-dark": "#4a2b33",
+          },
+          fontFamily: {
+            "display": ["Work Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light-primary dark:text-text-dark-primary">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top Navigation Bar -->
+<!-- Main Content -->
+<main class="flex-grow">
+<div class="container mx-auto px-4 py-16 sm:py-24">
+<!-- Page Heading -->
+<div class="mb-12 text-center">
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tighter text-text-light-primary dark:text-text-dark-primary">Get in Touch</h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-text-light-secondary dark:text-text-dark-secondary">Have a question or a custom cake idea? We'd love to hear from you.</p>
+</div>
+<!-- Two-column layout -->
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+<!-- Left Column: Information Panel -->
+<div class="lg:col-span-2 space-y-8">
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-border-light dark:border-border-dark">
+<h3 class="text-xl font-bold mb-6">Contact Information</h3>
+<div class="space-y-4">
+<!-- Phone -->
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10 text-primary dark:text-primary/90">
+<span class="material-symbols-outlined text-xl">phone</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-normal leading-normal truncate">+1 (416) 123-4567</p>
+<a class="text-sm font-medium text-primary hover:underline" href="tel:+14161234567">Call Us</a>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10 text-primary dark:text-primary/90">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-normal leading-normal truncate">hello@cakecreations.ca</p>
+<a class="text-sm font-medium text-primary hover:underline" href="mailto:hello@cakecreations.ca">Email Us</a>
+</div>
+</div>
+<!-- Address -->
+<div class="flex items-center gap-4">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10 text-primary dark:text-primary/90">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div class="flex-1">
+<p class="text-base font-normal leading-normal truncate">123 Sweet Street, Toronto, ON</p>
+<a class="text-sm font-medium text-primary hover:underline" href="#">Get Directions</a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-border-light dark:border-border-dark">
+<h3 class="text-xl font-bold mb-6">Business Hours</h3>
+<ul class="space-y-3 text-text-light-secondary dark:text-text-dark-secondary">
+<li class="flex justify-between"><span>Monday - Friday</span><span class="font-medium text-text-light-primary dark:text-text-dark-primary">9am - 6pm</span></li>
+<li class="flex justify-between"><span>Saturday</span><span class="font-medium text-text-light-primary dark:text-text-dark-primary">10am - 4pm</span></li>
+<li class="flex justify-between"><span>Sunday &amp; Holidays</span><span class="font-medium text-text-light-primary dark:text-text-dark-primary">Closed</span></li>
+</ul>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl border border-border-light dark:border-border-dark">
+<h3 class="text-xl font-bold mb-4">Follow Us</h3>
+<div class="flex gap-4">
+<a class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10 text-text-light-primary dark:text-text-dark-primary hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors" data-alt="Facebook icon" href="#">
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10 text-text-light-primary dark:text-text-dark-primary hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors" data-alt="Instagram icon" href="#">
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.792-2.792c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0-2a7 7 0 110 14 7 7 0 010-14zm6.406-2.31a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 shrink-0 size-10 text-text-light-primary dark:text-text-dark-primary hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors" data-alt="Twitter icon" href="#">
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M13.6 21.716c-4.305 0-7.78-3.475-7.78-7.78 0-.583.07-1.15.2-1.694H2.186a1 1 0 01-.98-1.223 10.985 10.985 0 017.388-7.388 1 1 0 011.223.98v3.832c.543-.13 1.11-.2 1.694-.2 4.305 0 7.78 3.475 7.78 7.78s-3.475 7.78-7.78 7.78zm3.6-10.323a.75.75 0 00-1.06-1.06l-2.47 2.47-1.47-1.47a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3-3zM15.1 8.5a1 1 0 10-2 0 1 1 0 002 0z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-3">
+<div class="bg-surface-light dark:bg-surface-dark p-6 sm:p-8 rounded-xl border border-border-light dark:border-border-dark">
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-medium leading-6 text-text-light-primary dark:text-text-dark-primary" for="full-name">Full Name</label>
+<div class="mt-2">
+<input autocomplete="name" class="block w-full rounded-lg border-0 py-2.5 px-3 bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="full-name" name="full-name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="email">Email Address</label>
+<div class="mt-2">
+<input autocomplete="email" class="block w-full rounded-lg border-0 py-2.5 px-3 bg-background-light dark:bg-background-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="email" name="email" placeholder="jane.doe@example.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="phone">Phone Number <span class="text-text-light-secondary dark:text-text-dark-secondary">(Optional)</span></label>
+<div class="mt-2">
+<input autocomplete="tel" class="block w-full rounded-lg border-0 py-2.5 px-3 bg-background-light dark:bg-background-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="phone" name="phone" placeholder="(416) 123-4567" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="inquiry-type">Inquiry Type</label>
+<div class="mt-2">
+<select class="block w-full rounded-lg border-0 py-2.5 px-3 bg-background-light dark:bg-background-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="inquiry-type" name="inquiry-type">
+<option>General Question</option>
+<option>Custom Cake Order</option>
+<option>Existing Order Inquiry</option>
+<option>Feedback &amp; Suggestions</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6" for="message">Message</label>
+<div class="mt-2">
+<textarea class="block w-full rounded-lg border-0 py-2.5 px-3 bg-background-light dark:bg-background-dark shadow-sm ring-1 ring-inset ring-border-light dark:ring-border-dark placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6" id="message" name="message" placeholder="How can we help?" required="" rows="5"></textarea>
+</div>
+</div>
+<div>
+<button class="w-full flex justify-center rounded-lg bg-primary px-4 py-3 text-sm font-bold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-opacity" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">© 2024 Cake Creations. All rights reserved.</p>
+<div class="flex gap-6 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

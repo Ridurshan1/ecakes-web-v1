@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Bakery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<div id="header"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f05c83",
+              "background-light": "#fcf8f9",
+              "background-dark": "#211115",
+              "text-light": "#1b0e11",
+              "text-dark": "#fcf8f9",
+              "subtext-light": "#994d61",
+              "subtext-dark": "#e7d0d6",
+              "border-light": "#f3e7ea",
+              "border-dark": "#3a2a2e",
+            },
+            fontFamily: {
+              "display": ["Work Sans", "Noto Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<main class="flex-grow">
+<!-- HeroSection -->
+<section class="w-full @container">
+<div class="flex min-h-[60vh] flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat p-4 text-center md:p-8" data-alt="A brightly lit, modern bakery interior with two smiling bakers standing behind a counter of delicious cakes." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVCLKrm9OJBIMAKIRE4uca11f67XfLdfJUQJlSW5jvOQ2_hs5swS3xDp6PVDFAj89_NQSZhOiakSrYPdvhBFWtiiWZCYsJ89SGMyYKd7eM4jZCCg2UxobY7rDIDvfAeJrhT2buIM66iOfBTNvpv1YKdPJIliGYxvfEoMqiXzrhMSrcY4L6lxCUV7tXgwat1UchB2uYhgnOJ37zWE4wib59_hyu32HXeb21hiPY3ESOs1WSGPTXsemWiFsPIEAnt54xPuzwj2MYBdU");'>
+<div class="flex flex-col gap-2 max-w-3xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-tighter @[480px]:text-6xl">Baked with Love, from Our Family to Yours.</h1>
+<h2 class="text-white text-base font-normal leading-normal @[480px]:text-lg">Discover the story behind Canada's favourite handcrafted cakes.</h2>
+</div>
+</div>
+</section>
+<!-- Story/Narrative Section -->
+<section class="mx-auto max-w-6xl space-y-16 px-4 py-16 md:py-24">
+<div class="flex flex-col items-center gap-8 md:flex-row md:gap-12">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-[4/3] rounded-lg object-cover" data-alt="Close-up shot of hands kneading dough on a floured wooden surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADNc3xUodQjnQAK-RkLfVIRAlczJyvYG6EvBcFwgw1qSRDNAb19F1iWAlldQLH3R1vHmERGplr1RwIbj6Amues63CAPM459ThLA_EO5iCKHy_DeHByTyPpDYRjrUI2YfOqpmDAc5cJXYyxhRNf-m7YSoPCYXETkLJEEWCwAJ7lfpGIr9fLzoK7Ph00tA6yH8oRwOiwxV2bHQ829Tud4jGGmHr7xiPC9VkGs0FnCu29CdrnGbJo11K-Xh4px_jfoVbOgazgfewrLx4"/>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">The Spark of Passion</h3>
+<p class="mt-4 text-base leading-relaxed text-subtext-light dark:text-subtext-dark">Our journey began with a simple love for baking, a cherished family recipe, and a dream. We started in a small home kitchen, and with the support of our incredible community, we've grown into the bakery you know and love today. Every cake tells a part of our story, and we're thrilled to share it with you.</p>
+</div>
+</div>
+<div class="flex flex-col-reverse items-center gap-8 md:flex-row md:gap-12">
+<div class="w-full md:w-1/2">
+<h3 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Our First Milestone</h3>
+<p class="mt-4 text-base leading-relaxed text-subtext-light dark:text-subtext-dark">Opening our first storefront was a dream come true, allowing us to share our creations with the entire neighbourhood. It marked the beginning of a new chapter, transforming a passion project into a community staple where friends and families gather to celebrate life's special moments.</p>
+</div>
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-[4/3] rounded-lg object-cover" data-alt="The charming exterior of a small, local bakery with a welcoming sign." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHRrOw19rObnBwSmYbigBW0QKrsN78C7Qv5-iMIxcopJAWwNDpmlpB47qQUwqu-atF897uUwOP4MF3vJamYf4sULDTrh3gHQChrtS2EEhxqXIAMsmpZ7irCwwwVOqwk6JhQXsQCYrvf-8ZPF8O9MyaRFK_gZqWYUo2nU7PjKmq5J9_LO2-Zx7CBmGv5A1M3oPiAW3OLk9RgqPSoqIYqX0PH9iSZuvMIlMoRTZEi0jepxRTfsMVm919cq4bnIjbx-t1iG9zkEuC_Xw"/>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="bg-primary/5 dark:bg-primary/10 py-16 md:py-24">
+<div class="mx-auto max-w-6xl px-4">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Our Values</h2>
+<p class="mt-4 max-w-2xl mx-auto text-base text-subtext-light dark:text-subtext-dark">We believe in a few simple things: quality you can taste, craftsmanship in every detail, and a deep connection to our local community.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="flex flex-col items-center gap-3 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-6 text-center shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary">eco</span>
+<h3 class="text-lg font-bold">Quality Ingredients</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">We source the finest local and premium ingredients to ensure every bite is exceptional.</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-6 text-center shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary">brush</span>
+<h3 class="text-lg font-bold">Handcrafted Perfection</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Our artisanal process and meticulous attention to detail are baked into everything we create.</p>
+</div>
+<div class="flex flex-col items-center gap-3 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-6 text-center shadow-sm">
+<span class="material-symbols-outlined text-4xl text-primary">favorite</span>
+<h3 class="text-lg font-bold">Community Roots</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">We are proud to be a part of the local Canadian community and are committed to giving back.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Team Section -->
+<section class="py-16 md:py-24">
+<div class="mx-auto max-w-6xl px-4">
+<div class="text-center">
+<h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Meet Our Bakers</h2>
+<p class="mt-4 max-w-2xl mx-auto text-base text-subtext-light dark:text-subtext-dark">The heart and soul of our kitchen. Meet the talented individuals who pour their passion into every cake.</p>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
+<div class="group relative text-center">
+<div class="overflow-hidden rounded-full">
+<img class="mx-auto h-32 w-32 object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Headshot of Jane Doe, a smiling woman with brown hair." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3S0eFf8NszBalvPemfaszZYLIsolm3t1OxJXzi782UOlhEgcklpn_bKFwFX0tNLsMaTNcdzm8RmFaFpgt89tZXDKkMYWaYABOw7M2NlF8OIh79XpztG5AEKgkpe6y_l7z9RDRs6rqqFQC-ro5CzWb1sb0saB0q5jUEFtkdTKNRAbwIG_YYoALVdVomW4PeGzn7lUa1ok-HPtvP0sNx-jKWYFkcyuL6pXEhuxgctvuVPiUhMzKGXRw6SxysheC9DyW_ck-5HUNA6o"/>
+</div>
+<h3 class="mt-4 text-base font-bold">Jane Doe</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Head Pastry Chef</p>
+<p class="mt-1 text-xs italic text-subtext-light/80 dark:text-subtext-dark/80">Fav Cake: Red Velvet</p>
+</div>
+<div class="group relative text-center">
+<div class="overflow-hidden rounded-full">
+<img class="mx-auto h-32 w-32 object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Headshot of John Smith, a smiling man with a beard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNsRCE5fggrcK1WyIhDGVBuI8uWRsvtVZZQS9N5Q1yl_lbtEZ8dTCkxTSFj-Bc509_GIwqIzJfL11oY3WR0CU0_JIbmI64-aEsNLkVRLUJn0hBSHT5sRqxWOqduIlgkXo3FOotu8r7q39F2JA0kASX3bHkSpbItVazhhHa0ZXlOCU3KMW8yI57VcDbgmaZxeaM5H807pcsbzmxiE66qBIv8JRZGreRNE_Rr0dLcX9f18aOOQ5lWAZVacJZ2JzhwK1dQzD6onBFXVs"/>
+</div>
+<h3 class="mt-4 text-base font-bold">John Smith</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Cake Decorator</p>
+<p class="mt-1 text-xs italic text-subtext-light/80 dark:text-subtext-dark/80">Fav Cake: Chocolate Fudge</p>
+</div>
+<div class="group relative text-center">
+<div class="overflow-hidden rounded-full">
+<img class="mx-auto h-32 w-32 object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Headshot of Mike Williams, a man with glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjl0ksHnRGndZAgF1pwuf6zBpQfZRULy5xYH0mB8tddN2_t79GBVMpjc5MIAnM0yUOhJSg8qD2g2WP-fZLJOBVr-VlLArENU92gQCi9PYBdbK03uHm1b31Z9sGgwtQFhvRa7OWaeHns1SU3IfehuKwrfdLUFjAojuv_qa287sNunA3jiVVUITrPXD-342oKCuQ0T4q82pV5AuXDWlxY7Yad9npYofKFT_uOZTwAr3ehCTEwCu3loROjTgo4k4TkqpYad-hTrKzJM0"/>
+</div>
+<h3 class="mt-4 text-base font-bold">Mike Williams</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Founder &amp; Baker</p>
+<p class="mt-1 text-xs italic text-subtext-light/80 dark:text-subtext-dark/80">Fav Cake: Carrot Cake</p>
+</div>
+<div class="group relative text-center">
+<div class="overflow-hidden rounded-full">
+<img class="mx-auto h-32 w-32 object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Headshot of Sarah Chen, a woman with blonde hair." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR_mBR5ilLQORAeX_pACfSUwnuY0FEimS1EU_UjmHBcuvtZl00jGw8ulrUUDrjSBIwpAt3Pv907zSKJvfwyirgJYZgX_DoJxoZu1BqDJtNrELx3pm5a8rrSG6AlD2p0XCyhAo0dIl9qugRNWcQZvXK-ymp-gocWEusE9ccWJJ-9VPMJWVX1j_BZJQoeLtceHaeLMKUTeTphzxNqbvtYuMMi6DO3WoJDp_g2Cn8sfaldwMS9rCFltkFdty1QVfqWmqXave67AJPOg4"/>
+</div>
+<h3 class="mt-4 text-base font-bold">Sarah Chen</h3>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Apprentice Baker</p>
+<p class="mt-1 text-xs italic text-subtext-light/80 dark:text-subtext-dark/80">Fav Cake: Lemon Drizzle</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="w-full">
+<div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+<div class="flex flex-col items-center justify-between gap-8 rounded-lg bg-primary/20 dark:bg-primary/30 p-8 text-center md:flex-row md:p-12 md:text-left">
+<div class="flex-1">
+<h2 class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark">Taste the Story for Yourself</h2>
+<p class="mt-2 text-subtext-light dark:text-subtext-dark">Ready to experience the love and craftsmanship in every bite? Browse our selection of handcrafted cakes.</p>
+</div>
+<button class="flex min-w-[160px] max-w-[480px] shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
+<span class="truncate">Browse Our Cakes</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cake Tips - Sweet Delights</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+<style>
+    .faq-item>input[type="checkbox"] {
+      display: none;
+    }
+
+    .faq-item .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .faq-item>input[type="checkbox"]:checked+.faq-header .icon-open {
+      display: none;
+    }
+
+    .faq-item>input[type="checkbox"]:checked+.faq-header .icon-close {
+      display: inline-block;
+    }
+
+    .faq-item>input[type="checkbox"]:checked~.faq-content {
+      max-height: 500px;
+      transition: max-height 0.5s ease-in;
+    }
+
+    .icon-close {
+      display: none;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#eb2d60",
+            "background-light": "#fcf8f9",
+            "background-dark": "#211115",
+            "text-light": "#1b0e11",
+            "text-dark": "#f8f6f6",
+            "text-muted-light": "#994d61",
+            "text-muted-dark": "#a88e95",
+            "surface-light": "#f3e7ea",
+            "surface-dark": "#311a21",
+            "border-light": "#f3e7ea",
+            "border-dark": "#4a2831"
+          },
+          fontFamily: {
+            "display": ["Work Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopNavBar -->
+<main class="flex flex-1 flex-col">
+<!-- HeroSection -->
+<section class="w-full">
+<div class="relative flex min-h-[400px] flex-col items-center justify-center bg-cover bg-center bg-no-repeat p-8 text-center" data-alt="A beautifully decorated tiered cake on a stand, with soft lighting." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7P9W6eQgfMqpFvi_CHxMhZDP4vVtFZizreXcf0iGGXyzjMcN-1Pnrh4d-T3cvFPOCj6AiHhzbOI6VdAj771KGM_vYTYCVNWP0ZFOPArKA6mOHtKWJvHqd49gQlrFJ3zwfSc73wI7LiyABk6jB2E9QYHikvfm5_AbBoq8zY4g4nx19ABjxco9ZGvAu0c3dVVtXtPLek2ZIuF6YLTJz_4bmYNq3OnpYd5ypgLh64sMlytUEpzlV950torg26v67XoE4TnJhuhoigrM");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl">Caring For Your Cake</h1>
+<h2 class="text-white/90 text-base font-normal leading-normal md:text-xl">Your guide to perfect cake storage, serving, and care to ensure every slice is a delight.</h2>
+</div>
+</div>
+</section>
+<div class="mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+<div class="flex flex-col gap-8 md:gap-12">
+<!-- Breadcrumbs and Filters -->
+<div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap items-center gap-2">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary text-base font-medium leading-normal" href="#">Home</a>
+<span class="text-text-muted-light dark:text-text-muted-dark text-base font-medium leading-normal">/</span>
+<span class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Cake Tips</span>
+</div>
+<!-- Chips -->
+<div class="flex gap-2 flex-wrap">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 bg-primary text-white text-sm font-bold">All</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors px-4 text-sm font-medium">Storage</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors px-4 text-sm font-medium">Serving</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors px-4 text-sm font-medium">Transportation</button>
+</div>
+</div>
+<!-- ImageGrid / Tip Cards -->
+<section class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 p-4 transition-shadow hover:shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="A slice of cake being placed in a refrigerator on a clean white plate." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAumBvS437msrWcUuX6ANAkig-MaOIVHKibBWzQtOtjjAutm8JSfeNHEA709VMOD5nXHURy8R0qQsVsx1JtUy-jmetgwRYgXf86x7xLwIWQW2uK3BuxaU6I90sE2UEUl-rw8j15aRM3zwJcyvjMJU5miiErx08YD5gwDUgiq4hKDare3dBh-pwj1GRIniP8BJbA_WphC4TPYbLIj3a54rcpHNNz0o9nfOxaA2pyJtQN6gXQHZfQrQKXSSPSPu4lX4dz4nb2qgIQOAQ");'></div>
+<div>
+<h3 class="text-lg font-bold">Refrigeration</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Keep your cake cool and fresh. Learn when to refrigerate and for how long to maintain its perfect texture and flavor.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 p-4 transition-shadow hover:shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="A person happily serving a slice of cake at a birthday party." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFxCt6LwUFiZ00NAuqoRO1ZiAFMyFB8ZnU4zSBQDa7HuB22S290i462Vgm7IB5OYBj6raeZeRyhggcTT3O9CTVCKjN_FlNpijGSE825rz9wCPQ916ACMVObLyDTjoHIA12u92rcl9oWQ66MOplLFF4y-lkpEVXLkbnoEMCSn-Kt_QYHkPt5jLRlZH2RKqw5IQmWfgCBssMMQCqFOcAn3zFwPi2WZ3sqSr309NH49opqck15DPNnnQ7Z3lnem4nMFzt89Tvy8VJPTA");'></div>
+<div>
+<h3 class="text-lg font-bold">Optimal Serving Temperature</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">For the best taste experience, serve your cake at the right temperature. We'll guide you on when to take it out of the fridge.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 p-4 transition-shadow hover:shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="A cake box sitting securely on the floor of a car passenger seat." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlo7KxIoOIsfBpt-caqZVIP_kGcEAZIPigoNd7HIN0D9Ln7uvPgyveTLE7rlmqAE5FSOG2dNf4MSkHeY4O5ddLOBzjBVKS8knlLqZpSK7Fec54US_7GMFSVg_QO9xgGwWxpUt7VUWyynO2WSm3EdsCmFBoewkJ6Y1Q5MeN7my8FJjJMEeAcqe3zPcn5OppxX98Ivl6u68ipJw38QR7HXO2msOYZ_Ghava027XiN97OfP0STmWCzaBIh3UPAcikYtuH1jW351p-WPs");'></div>
+<div>
+<h3 class="text-lg font-bold">Safe Transportation</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Follow our simple steps to ensure your cake arrives at its destination looking as beautiful as when you picked it up.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 p-4 transition-shadow hover:shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="A perfectly cut slice of multi-layered cake on a plate." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCt8lsxNZ9QwK5FyYYuaoceYKCzz2G3Domscr5s3VUeYGX8TatOC223ClBqdQNN6UeQBWFHJ8_G3jEdAYp2dOd-5aMs7yBu83Q33b8BVDjTPLluke4Ziu-n5xFcfEUhBRq1mwG_mwZQIJmj8ZulODzTWUU4_UGMyTugAGuMrVB6XgEFnbENqgQYhYYtk2cBBIu9V7VI-xCU00SZjUeY8eFcIpSyCVM8JC1llR3sfOUV6ja-vGKKsijX-6JEJr37SWd5OrBpFYJltJM");'></div>
+<div>
+<h3 class="text-lg font-bold">Slicing Like a Pro</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Learn the best techniques for cutting round and square cakes to get clean, beautiful slices for all your guests.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 p-4 transition-shadow hover:shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="Leftover slices of cake neatly stored in an airtight container." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWCnMcahDMqFgLDOYMAo1c5Da8iqSAzsWvVQ5ZXuERh2PJBOSlrJ-sN_i06nc6QE9WxV_R9_8D0aQR01qJjVujcTGpBDJ85hzxupbMivQQbBQQrN4EHw1qlS9Li_0bkdp7Ts9IZOls-QF277ugDwCia_5GYUNnwmXLoQjS5qWz_M8wIRLXOCuTqBTVm3ACniVZALjWIKEAzgTwJ8lVhxGFJJei1E8RXho-X0txOa0fD8fbEDMI_WLL5yA8P3mQRoFJA_gO61ZHlFA");'></div>
+<div>
+<h3 class="text-lg font-bold">Storing Leftovers</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Don't let a single crumb go to waste. Find out the best way to store leftover cake to enjoy later.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-surface-light/50 dark:bg-surface-dark/50 p-4 transition-shadow hover:shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="A list of ingredients with icons for nuts, dairy, and gluten highlighted." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRDAK0BPcjlcUlIrSZU0nTUXtG-s29APFPVPmVbrmLiMKW3V_zS0VrQtR_ZKYqViqJg16X2pv1udm8SpKbKwzYBfXs5JKOiAx549R5XqzSWADmCmf9J1yHPnLzBESR0u43XkMqrENwc67-PofSIWmy4nG2i2gkooE3AJ80EKpAkYpWt92eLRIMB0G04-5QTkBUZQORsInSrjq1r8EZys3i2dMC8_mZbOhBJ7jIZABaRetQVHjLEGiGi_FbpFYVOj2LLWIWmTctz40");'></div>
+<div>
+<h3 class="text-lg font-bold">Allergies &amp; Ingredients</h3>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal mt-1">Your safety is our priority. Learn about common allergens in our cakes and where to find detailed ingredient information.</p>
+</div>
+</div>
+</section>
+<!-- Accordion/FAQ Section -->
+<section class="w-full max-w-4xl mx-auto py-8">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-bold tracking-tight">Frequently Asked Questions</h2>
+<p class="mt-2 text-text-muted-light dark:text-text-muted-dark">Find quick answers to common cake care questions.</p>
+</div>
+<div class="space-y-4">
+<div class="faq-item border-b border-border-light dark:border-border-dark pb-4">
+<input class="peer" id="faq1" type="checkbox"/>
+<label class="faq-header flex cursor-pointer items-center justify-between py-2" for="faq1">
+<h4 class="font-semibold text-lg">Can I freeze my cake?</h4>
+<span class="material-symbols-outlined icon-open">add</span>
+<span class="material-symbols-outlined icon-close">remove</span>
+</label>
+<div class="faq-content">
+<p class="pt-2 text-text-muted-light dark:text-text-muted-dark">Yes, most of our cakes can be frozen! For best results, wrap the cake slices tightly in plastic wrap, then a layer of aluminum foil, and place them in an airtight container. They can be frozen for up to 2 months. To thaw, leave them in the refrigerator overnight.</p>
+</div>
+</div>
+<div class="faq-item border-b border-border-light dark:border-border-dark pb-4">
+<input class="peer" id="faq2" type="checkbox"/>
+<label class="faq-header flex cursor-pointer items-center justify-between py-2" for="faq2">
+<h4 class="font-semibold text-lg">How far in advance should I take my cake out of the fridge?</h4>
+<span class="material-symbols-outlined icon-open">add</span>
+<span class="material-symbols-outlined icon-close">remove</span>
+</label>
+<div class="faq-content">
+<p class="pt-2 text-text-muted-light dark:text-text-muted-dark">We recommend taking your cake out of the refrigerator about 1-2 hours before serving. This allows the buttercream and cake to soften to the perfect, flavourful consistency. The exact time may vary depending on the temperature of your room.</p>
+</div>
+</div>
+<div class="faq-item border-b border-border-light dark:border-border-dark pb-4">
+<input class="peer" id="faq3" type="checkbox"/>
+<label class="faq-header flex cursor-pointer items-center justify-between py-2" for="faq3">
+<h4 class="font-semibold text-lg">How should I transport a tall or tiered cake?</h4>
+<span class="material-symbols-outlined icon-open">add</span>
+<span class="material-symbols-outlined icon-close">remove</span>
+</label>
+<div class="faq-content">
+<p class="pt-2 text-text-muted-light dark:text-text-muted-dark">For multi-tiered or tall cakes, transportation requires extra care. Place the cake box on a flat, level surface, such as the floor of the passenger seat or the trunk of your car. Avoid placing it on a slanted car seat. Drive carefully, avoiding sudden stops and sharp turns.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-light dark:bg-surface-dark text-center rounded-xl p-8 md:p-12">
+<h2 class="text-3xl font-bold">Still have questions?</h2>
+<p class="mt-2 mb-6 max-w-2xl mx-auto text-text-muted-light dark:text-text-muted-dark">We're here to help! If you can't find the answer you're looking for, please don't hesitate to reach out to our team.</p>
+<button class="flex mx-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] transition-opacity hover:opacity-90">
+<span class="truncate">Get in Touch</span>
+</button>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-light dark:bg-surface-dark mt-16">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 text-center text-text-muted-light dark:text-text-muted-dark">
+<div class="flex items-center justify-center gap-2 mb-4">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<p class="font-bold text-lg text-text-light dark:text-text-dark">Sweet Delights</p>
+</div>
+<nav class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-4 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Cakes</a>
+<a class="hover:text-primary transition-colors" href="#">Order</a>
+<a class="hover:text-primary transition-colors" href="#">About Us</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</nav>
+<p class="text-sm">© 2024 Sweet Delights Canada. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

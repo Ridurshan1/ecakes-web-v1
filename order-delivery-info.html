@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ordering &amp; Delivery Information - CakeShop</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eb2d60",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211115",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2a161a",
+                        "text-light": "#1b0e11",
+                        "text-dark": "#fcf8f9",
+                        "text-muted-light": "#994d61",
+                        "text-muted-dark": "#d1a3b1",
+                        "border-light": "#f3e7ea",
+                        "border-dark": "#412c31",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+</header>
+<main class="flex-grow">
+<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="@container">
+<div class="p-0 @[480px]:p-4">
+<div class="flex min-h-[480px] flex-col items-center justify-center gap-6 rounded-xl bg-cover bg-center bg-no-repeat p-4 @[480px]:gap-8" data-alt="A beautifully decorated cake on a stand with a blurred background" style='background-image: linear-gradient(rgba(33, 17, 21, 0.4) 0%, rgba(33, 17, 21, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCU9E5qH3jXBsQd34a3HCJYrEyvq1NM4o4a4xwmT7DmV8-PkKNqHS55kIHzUWAlexXc8sHmrsf3XqwoV1jgxqCDHO-QOIUxUCGkwHCAlhcbN8rq2-98QCYOXnh0pdW0DxYoOOsTRFknQFfR-2kCUEDKBJfTjQW_QY-_w89oL-jf1u4b2CpY4apq_SAxBRxy2Clyy8IzEx8SmQpy7n6WyO4GZ-rWLdSdDcVzpYicf7b-OIgdiY53I2Hlpmi4KNFpWryv9xUYobi-MLA");'>
+<div class="flex flex-col gap-2 text-center">
+<h1 class="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">Ordering &amp; Delivery Information</h1>
+<h2 class="text-lg font-normal leading-normal text-white/90 sm:text-xl">Everything you need to know to get your perfect cake, delivered right to your door.</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-4xl">
+<h2 class="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">How to Order</h2>
+<div class="mt-8 grid grid-cols-[auto_1fr] gap-x-4 gap-y-6">
+<div class="flex flex-col items-center gap-1 pt-1">
+<span class="material-symbols-outlined text-primary text-3xl">shopping_cart</span>
+<div class="h-full w-0.5 grow bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex flex-1 flex-col pb-6">
+<p class="text-lg font-bold">1. Browse &amp; Select</p>
+<p class="text-text-muted-light dark:text-text-muted-dark">Pick your favorite cake from our delicious collection. Customize size, flavor, and add a personal message.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="h-2 w-0.5 bg-border-light dark:bg-border-dark"></div>
+<span class="material-symbols-outlined text-primary text-3xl">calendar_month</span>
+<div class="h-full w-0.5 grow bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex flex-1 flex-col pb-6">
+<p class="text-lg font-bold">2. Choose Your Date</p>
+<p class="text-text-muted-light dark:text-text-muted-dark">Select a delivery or pickup date that works for you during checkout. Please allow a minimum of 48 hours notice.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="h-2 w-0.5 bg-border-light dark:bg-border-dark"></div>
+<span class="material-symbols-outlined text-primary text-3xl">credit_card</span>
+</div>
+<div class="flex flex-1 flex-col pb-6">
+<p class="text-lg font-bold">3. Checkout Securely</p>
+<p class="text-text-muted-light dark:text-text-muted-dark">Enter your details and pay with our secure system. You'll receive a confirmation email once your order is placed.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-4xl">
+<h2 class="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Delivery &amp; Pickup Information</h2>
+<div class="mt-8">
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+<div class="rounded-xl border border-border-light bg-surface-light dark:border-border-dark dark:bg-surface-dark p-6">
+<h3 class="text-xl font-bold">Delivery Info</h3>
+<div class="mt-4 space-y-4 text-text-muted-light dark:text-text-muted-dark">
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Delivery Zones:</strong> We currently deliver across the Greater Toronto Area (GTA) and Metro Vancouver.</p>
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Delivery Fees:</strong> Standard delivery is $15 CAD. Free delivery on all orders over $100 CAD.</p>
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Delivery Times:</strong> Deliveries are made Mon-Sat, between 10am - 6pm. We cannot guarantee specific delivery times.</p>
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Lead Time:</strong> A minimum of 48 hours notice is required for all delivery orders.</p>
+</div>
+</div>
+<div class="rounded-xl border border-border-light bg-surface-light dark:border-border-dark dark:bg-surface-dark p-6">
+<h3 class="text-xl font-bold">Pickup Info</h3>
+<div class="mt-4 space-y-4 text-text-muted-light dark:text-text-muted-dark">
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Pickup Location:</strong> 123 Cake Ave, Toronto, ON, M5V 2H1. Please see map for directions.</p>
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Pickup Hours:</strong> You can pick up your order Mon-Sat, from 11am - 7pm.</p>
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Instructions:</strong> Please bring your order confirmation email (printed or on your phone) when you come to pick up.</p>
+<p><strong class="font-semibold text-text-light dark:text-text-dark">Lead Time:</strong> A minimum of 24 hours notice is required for all pickup orders.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-4xl">
+<h2 class="text-2xl font-bold leading-tight tracking-tight sm:text-3xl">Frequently Asked Questions</h2>
+<div class="mt-8 space-y-4">
+<details class="group rounded-xl border border-border-light bg-surface-light p-6 dark:border-border-dark dark:bg-surface-dark">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                                Can I change or cancel my order?
+                                <span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<p class="group-open:mt-4 text-text-muted-light dark:text-text-muted-dark">
+                                Changes and cancellations are accepted up to 48 hours before the scheduled delivery/pickup time. Please contact our support team with your order number to make any adjustments.
+                            </p>
+</details>
+<details class="group rounded-xl border border-border-light bg-surface-light p-6 dark:border-border-dark dark:bg-surface-dark">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                                Do you offer cakes for specific dietary needs?
+                                <span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<p class="group-open:mt-4 text-text-muted-light dark:text-text-muted-dark">
+                                We offer a selection of gluten-free and vegan cakes. Please check the product description for dietary information. While we take precautions, we cannot guarantee against cross-contamination for severe allergies.
+                            </p>
+</details>
+<details class="group rounded-xl border border-border-light bg-surface-light p-6 dark:border-border-dark dark:bg-surface-dark">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+                                What happens if no one is home for the delivery?
+                                <span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined">expand_more</span>
+</span>
+</summary>
+<p class="group-open:mt-4 text-text-muted-light dark:text-text-muted-dark">
+                                If the recipient is not available, our driver will attempt to contact them. If we cannot reach them, the cake will be returned to our shop. A re-delivery fee will apply. We are not responsible for cakes left unattended.
+                            </p>
+</details>
+</div>
+</div>
+</section>
+<section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-4xl text-center">
+<h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Ready to Find Your Perfect Cake?</h2>
+<p class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark">Explore our collection of handcrafted cakes for any occasion.</p>
+<div class="mt-8">
+<button class="inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide">
+<span class="truncate">Browse Our Cakes</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-light dark:bg-surface-dark">
+<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip1_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs><clippath id="clip1_6_319"><rect fill="white" height="48" width="48"></rect></clippath></defs>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tighter">CakeShop</h2>
+</div>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">© 2024 CakeShop Inc. All rights reserved.</p>
+<div class="flex items-center gap-4">
+<a class="text-text-muted-light hover:text-primary dark:text-text-muted-dark" href="#">Facebook</a>
+<a class="text-text-muted-light hover:text-primary dark:text-text-muted-dark" href="#">Instagram</a>
+<a class="text-text-muted-light hover:text-primary dark:text-text-muted-dark" href="#">Twitter</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
